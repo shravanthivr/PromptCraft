@@ -6,15 +6,15 @@ PromptCraft – an AI-powered multi-tool for creative and productivity tasks
 
 A single-page web app where users can:
 
-Generate titles for articles/posts
-
-Summarize text
-
-Rephrase text
-
-Extract keywords
-
-Ask open-ended questions
+    Generate titles for articles/posts
+    
+    Summarize text
+    
+    Rephrase text
+    
+    Extract keywords
+    
+    Ask open-ended questions
 
 Currently, two official plugins are available:
 
