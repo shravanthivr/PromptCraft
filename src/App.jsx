@@ -24,7 +24,6 @@ export default function App() {
         />
       </div>
 
-      {/* Main Content */}
       <main className="flex flex-1 flex-col md:flex-row gap-8 px-4 py-8 max-w-5xl mx-auto w-full">
         <div className="flex-1 flex flex-col gap-8">
           {/* Prompt Section */}

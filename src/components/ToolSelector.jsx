@@ -1,10 +1,10 @@
 /* Dropdown for AI tool modes like Title Generator, summarize, rephrase, extract keywords, open-ended q&A*/
 
-import { useState } from 'react';
+import { useTool } from '../context/ToolContext';
 import Select from 'react-select'
 
 export default function ToolSelector() {
-    const [selectedTool, setSelectedTool] = useState('Tool Selector');
+    const { selectedTool, setSelectedTool } = useTool();
 
 
     const options = [
