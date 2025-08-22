@@ -21,7 +21,7 @@ app.post('/api/generate', async (req, res) => {
 
         // Create a dynamic system message based on the selected tool
         let systemMessage = 'You are a helpful assistant.';
-        switch (tool) {
+        /*switch (tool) {
             case 'Title_Generator':
                 systemMessage = 'You are an expert at generating catchy and SEO-friendly titles. Based on the following content, create a compelling title.';
                 break;
@@ -37,12 +37,12 @@ app.post('/api/generate', async (req, res) => {
             case 'Open_ended_QA':
                 systemMessage = 'You are a helpful assistant designed to answer open-ended questions.';
                 break;
-        }
+        }*/
 
         const response = await client.chat.completions.create({
             model: 'gpt-3.5-turbo',
             messages: [
-                { role: 'system', content: systemMessage },
+                { role: 'system', content: 'Please rephrase the following sentence to be more clear, concise, or engaging' },
                 { role: 'user', content: prompt }
             ],
             temperature: 0.7,
